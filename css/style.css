@@ -114,6 +114,19 @@ header .action .searchBx input{
     color: #222;
 }
 
+header .carro {
+    font-size: 1.4em;
+    width: 20px;
+    margin: 1px;
+    color: #fff;
+}
+
+header .carro i{
+    font-size: 1.4em;
+    margin: 1px;
+    color: #fff;
+}
+
 /* Ajuste de la sección */
 .seccion {
     padding-top: 65px; /* Asegura que la sección esté justo debajo del header */
@@ -134,6 +147,7 @@ header .action .searchBx input{
     color: #fff;
     letter-spacing: 1px;
 }
+
 
 
 /*home banner*/
