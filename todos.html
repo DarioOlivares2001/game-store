@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER CON MENU Y BUSCADOR -->
+    <header>
+        <a href="index.html" class="logo">JoGoblin</a>
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="kids.html"">Kids</a></li>
+            <li><a href="familiar.html">Familia</a></li>
+            <li><a href="rol.html">Rol</a></li>
+            <li><a href="todos.html">Todos</a></li>
+            <li><a href="tiendas.html">Tiendas</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Buscar Juego">
+            </div>
+            <div class="toggleMenu"></div>
+        </div>
+    </header>
+    <div class="seccion">
+        <div class="bg">
+            <div class="tipo">
+                <p>Todos los Juegos</p>
+            </div>            
+        </div>
+    </div>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/casting_shadows.png" alt="">
+                    </div>
+                    <p class="descripcion">CASTING SHADOWS</p>
+                    <span class="precio">$ 22.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/camel_up.png" alt="">
+                    </div>
+                    <p class="descripcion" id>CAMEL UP </p>
+                    <span class="precio">$ 19.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/danger_danger.png" alt="">
+                    </div>
+                    <p class="descripcion">DANGER DANGER
+                    </p>
+                    <span class="precio">$ 17.600</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/family_faceoff.png" alt="">
+                    </div>
+                    <p class="descripcion">FAMILY FACEOFF</p>
+                    <span class="precio">$ 21.800</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/head_trip.png" alt="">
+                    </div>
+                    <p class="descripcion">HEAD TRIP</p>
+                    <span class="precio">$ 22.900</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/hot_box.png" alt="">
+                    </div>
+                    <p class="descripcion">HOT BOX</p>
+                    <span class="precio">$ 23.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/hot_ones.png" alt="">
+                    </div>
+                    <p class="descripcion">HOT ONES</p>
+                    <span class="precio">$ 18.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/hues_and_cues.png" alt="">
+                    </div>
+                    <p class="descripcion">HUES AND CUES</p>
+                    <span class="precio">$ 19.990</span>
+                </div>
+               
+            </div> 
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/match_madness.png" alt="">
+                    </div>
+                    <p class="descripcion">MATCH MADNESS</p>
+                    <span class="precio">$ 20.990</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/monopoly.png" alt="">
+                    </div>
+                    <p class="descripcion">MONOPOLY</p>
+                    <span class="precio">$ 23.990</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/murder_motel.png" alt="">
+                    </div>
+                    <p class="descripcion">MURDER MOTEL</p>
+                    <span class="precio">$ 17.990</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/night_hunter.png" alt="">
+                    </div>
+                    <p class="descripcion">NIGHT HUNTER</p>
+                    <span class="precio">$ 23.990</span>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">CASTING SHADOWS</h2>
+                <p id="descripcion">Descripcion del Juego</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">CANTIDAD</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
